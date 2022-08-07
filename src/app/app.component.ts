@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  id: String = '';
+
+  onClick($event: String) {
+    this.id = $event
+  }
 }
